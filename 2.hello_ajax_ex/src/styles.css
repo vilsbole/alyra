@@ -1,0 +1,17 @@
+html, body {
+  height: 100%;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.code {
+  background-color: #ffa4a4;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.app-container {
+  height: 100%;
+}

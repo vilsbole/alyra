@@ -1,0 +1,13 @@
+html, body {
+  height: 100%;
+  font-family: 'ZCOOL KuaiLe';
+}
+.my-color {
+  color: burlywood;
+}
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
