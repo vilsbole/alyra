@@ -4,10 +4,14 @@ import './styles.css'
 console.log('Hello from ./src/index.js');
 
 // JSON_RPC using curl
-//   curl -X POST \
-//   -H "Content-Type: application/json" \
-//   --data '{"jsonrpc": "2.0", "id": 1, "method": "eth_blockNumber", "params": []}' \
-//   "https://mainnet.infura.io/v3/<YOUR_API_KEY>"
+  // curl -X POST \
+  // -H "Content-Type: application/json" \
+  // --data '{"jsonrpc": "2.0", "id": 1, "method": "eth_blockNumber", "params": []}' \
+  // "https://mainnet.infura.io/v3/<YOUR_API_KEY>"
+
+
+
+
 
 // JSON_RPC using fetch
 // fetch('https://mainnet.infura.io/v3/<YOUR_API_KEY>', {
@@ -20,12 +24,17 @@ console.log('Hello from ./src/index.js');
 //   })
 // }).then(console.log)
 
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function(event) {
   // - Code to execute when all DOM content is loaded.
   // - including fonts, images, etc.
 
   const web3 = ethers.getDefaultProvider()
-
   web3.getBlockNumber()
     .then(block => {
       console.log('Last Block', block)
